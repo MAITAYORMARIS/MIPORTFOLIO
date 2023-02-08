@@ -37,6 +37,26 @@ aside {
     font-size: 1.2em;
 
 }
+.selected:hover{
+	-webkit-animation: 0.3s click 1;
+}
+
+
+@-webkit-keyframes click{
+	50%{
+		-webkit-transform:scale(0.8);
+	}
+}
+.unselected:hover{
+	-webkit-animation: 0.3s click 1;
+}
+
+
+@-webkit-keyframes click{
+	50%{
+		-webkit-transform:scale(0.8);
+	}
+}
 
 
 .unselected {
