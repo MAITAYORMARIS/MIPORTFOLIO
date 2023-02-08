@@ -10,12 +10,15 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 
 aside {
+   position:fixed;
+   top:0;
+    /* margin:0; */
     width: 10vw;
-    min-height: 100%;
+    height: 100vh;
     background-color: #0f5174;
     display: flex;
     flex-direction: column;
@@ -23,13 +26,13 @@ aside {
     justify-content: flex-start;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    color: #11121E;
-}
+    color: #11121E;}
+
 
 
 .selected {
     width: 90%;
-    height: 18%;
+    height: 1.5em;
     background-color: #84D2F6;
     border-top: 2px solid #84D2F6;
     border-bottom: 2px solid #84D2F6;
@@ -42,7 +45,7 @@ aside {
 
 .unselected {
     width: 90%;
-    height: 15%;
+    height: 1em;
     background-color: #11121ece;
     border: 1px solid #11121ece;
     margin: 1% 0;
@@ -51,7 +54,7 @@ aside {
 
 .logo {
     width: 100%;
-    height: 30%;
+    height: 25%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -111,11 +114,13 @@ li {
     font-weight: bold;
     font-size: 1.2em;
 }
+
 /* CONTENIDO DE LA PAGINA */
 main {
     background-color: #11121E;
     width: 90vw;
     min-height: 100%;
+    margin-left: 10vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,7 +203,7 @@ main {
     align-items: center;
     border-radius: 15px 10px 15px 10px;
 }
-.logo{
+.logo-sazon{
     background-image: url(../multimedia/images/proyecto_sazon/logo-sazon.png);
     background-size: cover;
     background-repeat: no-repeat;
