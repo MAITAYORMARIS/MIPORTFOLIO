@@ -1,8 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 /* MI PRESENTACION */
 main {
     background-color: #11121E;
     width: 90vw;
-    height: 100vh;
+    height: auto;
+    margin-left: 10vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,7 +17,7 @@ main {
 
 .cuadro {
     width: 100%;
-    height: 42%;
+    height: 42vh;
     background-image: url(../multimedia/images/LOGO_PORTAFOLIO_1.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -43,13 +49,13 @@ main {
     font-size: 1.8em;
     font-weight: bolder;
     color: #FDF0D5;
-    margin-top: 1%;
+    /* margin-top: 1%; */
 }
 
 .nombre {
   
     height: 45%;
-    margin-bottom: 2%;
+    /* margin-bottom: 2%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,12 +123,12 @@ main {
 /* mis trabajos */
 .news {
     width: 100%;
-    height: 58%;
+    height: 58vh;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    margin-top: 5%;
+    /* margin-top: 5%; */
 }
 
 .card-group {
@@ -133,7 +139,7 @@ main {
     justify-content: center;
     align-items: center;
     column-gap: 5%;
-    margin-top: 1%;
+    /* margin-top: 1%; */
 }
 
 .card-uno {
