@@ -3,10 +3,28 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body {
+    width: 100%;
+    min-height: 100vh;
+   }
+aside{
+    position:absolute;
+   top:0;
+   left: 0;
+}
+/* CONTENIDO DE LA PAGINA*/
 main {
     background-color: #11121E ;
     color: #F1E5E3;
-    width: 90vw;;
+    width: 100vw;;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container {
+    width: 100%;
     height: auto;
     margin-left: 10vw;
     display: flex;

@@ -3,10 +3,28 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body {
+    width: 100%;
+    min-height: 100vh;
+   }
+aside{
+    position:absolute;
+   top:0;
+   left: 0;
+}
+/* CONTENIDO DE LA PAGINA*/
 main {
     background-color: #11121E;
     color: #FDF0D5;
-    width: 90vw;;
+    width: 100vw;;
+    height: auto;
+   display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container {
+    width: 100%;
     height: auto;
     margin-left: 10vw;
     display: flex;
@@ -14,7 +32,6 @@ main {
     justify-content: flex-start;
     align-items: center;
 }
-
 .news{
     width: 96%;
     height: 10vh;
@@ -59,18 +76,18 @@ main {
 }
 
 .card-group{
-    width: 75%;
+    width: 80%;
     height: 90vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    column-gap: 10%;
+   column-gap: 5%;
     /* margin-top:8%; */
 }
 .card-skills{
     background-color: #FDF0D5;
-    width: 30%;
+    width: 25%;
     height: 60%;
     display: flex;
     flex-direction: column;
