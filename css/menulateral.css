@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 aside {
     width: 10%;
     height: 100%;
@@ -19,18 +18,34 @@ aside {
 }
 
 
-.selected {
+.active {
     width: 90%;
     height: 1.5em;
-    background-color: #84D2F6;
-   border-top: 2px solid #84D2F6;
-    border-bottom: 2px solid #84D2F6;
+    background-color: #7dceec !important;
+   border-top: 2px solid #7dceec;
+    border-bottom: 2px solid #7dceec;
+    color:#11121E !important;
     font-weight: bold;
     margin: 1% 0; 
     font-size: 1.2em;
 
 }
-.selected:hover{
+.active:hover{
+	-webkit-animation: 0.3s click 1;
+}
+dl,ol,ul{
+    margin-bottom: 0;
+}
+ol,ul{
+    padding-left: 0;
+}
+
+@-webkit-keyframes click{
+	50%{
+		-webkit-transform:scale(0.8);
+	}
+}
+.nav-item:hover{
 	-webkit-animation: 0.3s click 1;
 }
 
@@ -40,24 +55,16 @@ aside {
 		-webkit-transform:scale(0.8);
 	}
 }
-.unselected:hover{
-	-webkit-animation: 0.3s click 1;
-}
 
 
-@-webkit-keyframes click{
-	50%{
-		-webkit-transform:scale(0.8);
-	}
-}
-
-
-.unselected {
+.nav-item {
     width: 90%;
     height: 1em;
+    text-decoration: none;
     background-color: #11121ece;
     border: 1px solid #11121ece;
     margin: 1% 0; 
+    text-decoration: none;
     
 }
 
@@ -81,39 +88,33 @@ aside {
 
 }
 
-.menu {
-  
+.opciones {
     width: 100%;
     height:30%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center; 
     text-decoration: none;
    font-weight: bold;
     font-size: 1em;
-    
-  
-}
+} 
 
-.menu>li {
+.opciones>li {
     width: 90%;
     height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 
 }
 
-li a {
+.nav-link{
     text-decoration: none;
-    color:#FDF0D5;
-}
-
-li {
     list-style-type: none;
-} 
+    color:#FDF0D5 !important;
+}
 
 .redes {
     width: 100%;
@@ -126,25 +127,47 @@ li {
     font-weight: bold;
     font-size: 1.2em;   
 }
+.redes>li{
+  list-style-type: none;
+}
 
+/* RESPONSIVE */
+/* PC */
+@media (min-width:1370px){
+    aside {
+        width:15%;
+     }
+    
+}
+
+/* TABLETS */
 
 @media screen and (min-width:768px) and (max-width:1024px) {
     aside{
-        width:20vw;
+        width:15vw;
     }
-
 }
-@media (max-width:389px){
-    aside{
-        width:200px;
-        /* position:absolute; aplicado en clase */
-        left: -195px;
 
-       
+
+/* MOVIL */
+@media screen and (min-width:320px) and (max-width:720px){
+    aside{
+        width:90px;
     }
     aside:hover{
         left:0px;
         transition: all 1s ease-in-out;
-    } 
-   
-} 
+    }  
+    .opciones{
+        width: 88%;
+        font-size: .6em;
+    }
+    .opciones:hover{
+        font-size: .7em;
+    }
+    .redes{
+        width: 80%;
+        font-size: .75em;
+    }
+}
+

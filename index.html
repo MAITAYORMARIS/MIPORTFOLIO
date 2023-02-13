@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LIBRERIAS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- estilos de fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,10 +17,10 @@
         href="https://fonts.googleapis.com/css2?family=Arimo&family=Barlow+Condensed&family=Roboto:ital,wght@0,100;1,100&display=swap"
         rel="stylesheet">
     <!-- hojas de estilo -->
-    <link rel="stylesheet" href="./css/cuerpopagina.css">
+    <link rel="stylesheet" href="./css/menulateral.css">
     <link rel="stylesheet" href="./css/styleindex.css">
 
-    <title>Home Prueba</title>
+    <title>Inicio</title>
 </head>
 
 <body>
@@ -28,62 +29,64 @@
             <div class="logo">
                 <img src="#">
             </div>
-
-            <ul class="menu">
-                <li class="selected">Inicio</li>
-                <li class="unselected"><a href="./pages/conoceme.html">Conoceme</a></li>
-                <li class="unselected"><a href="./pages/portfolio.html">Portfolio</a></li>
-                <li class="unselected"><a href="./pages/conectemos.html">Conectemos</a></li>
+            <ul class="opciones">
+                <!-- opciones -->
+                <li class="nav-item active"><a class="nav-link ">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/conoceme.html">Conoceme</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/conectemos.html">Conectemos</a></li>
             </ul>
             <div class="relleno"></div>
             <ul class="redes">
-                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li ><a class="nav-link" href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li ><a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li ><a class="nav-link" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </aside>
-        <section class="container">
+        <section class="container-banner">
             <section class="cuadro">
                 <section class="info-banner">
                     <div class="welcome-banner">
-                        <p>Soy,</p>
+                        <p class="fs-3 fw-bolder">Soy,</p>
                     </div>
                     <div class="nombre">
-                        <p>Yormaris</p>
-                        <p class="m">Maita</p>
+                        <p class="parrafo fw-bolder">Yormaris</p>
+                        <p class="m parrafo fw-bolder">Maita</p>
                     </div>
-
                     <div class="tips">
                         <div class="forma">
-                            <p class="titulo">Web Developer</p>
-                            <p class="detalle">MERN Full Stack</p>
+                            <p class="titulo parrafo fw-bold">Web Developer</p>
+                            <p class="detalle parrafo">MERN Full Stack</p>
                         </div>
                         <div class="forma">
-                            <p class="titulo">Creative Designer</p>
+                            <p class="titulo parrafo fw-bold">Creative Designer</p>
                         </div>
                     </div>
                     <div class="welcome-banner">
-                        <p>Bienvenido a mi espacio!</p>
+                        <p class="fs-3 fw-bolder">Bienvenido a mi espacio!</p>
                     </div>
                 </section>
             </section>
 
-
             <section class="news">
-                <p class="welcome">Mis trabajos Recientes</p>
+                <p class="welcome fs-3 fw-bolder">Mis trabajos Recientes</p>
                 <div class="card-group">
                     <div class="card-uno">
-                        <button type="button" class="vista-proyecto"><a href="./pages/sazonpropia.html">Ver</a></button>
+                        <button type="button" class="vista-proyecto sazon"><a href="./pages/sazonpropia.html">Ir</a></button>
+                        <img src="./multimedia/images/proyecto_sazon/LOGOTRES.png" class="img-fluid" >
                     </div>
                     <div class="card-dos">
-                        <button type="button" class="vista-proyecto"><a href="#">Ver</a></button>
+                                     <button type="button" class="vista-proyecto vacio"><a href="#">Ir</a></button>
+                        <img  class="img-fluid">
                     </div>
                     <div class="card-tres">
-                        <button type="button" class="vista-proyecto"><a href="#">Ver</a></button>
+                        <button type="button" class="vista-proyecto vacio"><a href="#">Ir</a></button>
+                        <img  class="img-fluid" >
                     </div>
                 </div>
             </section>
         </section>
     </main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </html>

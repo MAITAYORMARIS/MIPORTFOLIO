@@ -8,7 +8,7 @@ body {
     min-height: 100vh;
    }
 aside{
-    position:absolute;
+position:absolute;
    top:0;
    left: 0;
 }
@@ -22,7 +22,7 @@ main {
     justify-content: center;
     align-items: center;
 }
-.container {
+.container-banner {
     width: 100%;
     height: auto;
     margin-left: 10vw;
@@ -52,48 +52,37 @@ main {
     align-items: center;
     margin:0% 25%;
 }
-.contenido_datos {
-    width: 90%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 .welcome-banner {
-    height: 19%;
+    height: 18%;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.8em;
-    font-weight: bolder;
     color: #FDF0D5;
-    /* margin-top: 1%; */
 }
 
 .nombre {
-  
     height: 45%;
-    /* margin-bottom: 2%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     font-family: 'Arimo', sans-serif;
-    font-weight: bold;
-    font-size: 4em;
+    font-size: 3em;
     color:#FDF0D5;
     /* sombra */
     text-shadow: -4px 0px 0px #543976b9;
 }
 
+.parrafo {
+    margin-bottom: 0px;
+}
 .m {
     position: relative;
     margin-left: 34%;
-    margin-top: -9%;
+    margin-top: -14%;
 }
 
 .tips {
     width: 90%;
-    height: 15%;
+    height: 17%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -103,7 +92,7 @@ main {
 
 .forma{
     width: 30%;
-    height: 89%;
+    height: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,8 +108,7 @@ main {
 
 .titulo {
     font-family: 'Roboto',sans-serif;
-    font-weight: bolder;
-    font-size: 1.05em;
+    margin-bottom: 0;
 }
 
 .detalle {
@@ -129,8 +117,6 @@ main {
 
 .welcome {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.8em;
-    font-weight: bolder;
     color: #FDF0D5;
 }
 
@@ -159,21 +145,71 @@ main {
 }
 
 .card-uno {
-    background-image: url(../multimedia/images/proyecto_sazon/logo-sazon.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 25%;
-    height: 55%;
+    background-color:#ef9cdade;
+    width: 260px;
+    height: 160px;
 }
-
+.card-uno>img{
+    position: relative;
+    top:-20px;
+    left: 13px;
+    height: 60%;
+    width: 90%;
+}
+.vista-proyecto{
+    background-color:#11121ec4;
+    border:none;
+   display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+    position: relative;
+    left: 105px;
+    top:85px;
+    z-index:2;
+}
+.card-uno:hover{
+    background-color: #8cc63e;
+    color:#FDF0D5;
+}
+.vista-proyecto>a{
+    text-decoration: none;
+    color:#FDF0D5;
+}
+.sazon:hover{
+    border: solid 3px #b7e975bd;
+    background-color: #b7e975bd;
+    color: #FDF0D5;
+}
 .card-dos {
     background-color: #EF9CDA;
-    width: 25%;
-    height: 55%;
+    width: 260px;
+    height: 160px;
 }
 
 .card-tres {
     background-color: #EF9CDA;
-    width: 25%;
-    height: 55%;
+    width: 260px;
+    height: 160px;
+}
+.vacio:hover{
+    border: solid 3px #d6b3bd;
+    background-color: #d6b3bd;
+    color: #FDF0D5;
+}
+
+/* RESPONSIVE */
+/* PC */
+@media (min-width:1200px){
+    
+}
+
+/* TABLETS */
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+}
+
+
+/* MOVIL */
+@media screen and (min-width:320px) and (max-width:720px){
 }
