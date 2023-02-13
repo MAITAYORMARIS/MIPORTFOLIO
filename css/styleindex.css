@@ -3,15 +3,18 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 body {
     width: 100%;
     min-height: 100vh;
-   }
-aside{
-position:absolute;
-   top:0;
-   left: 0;
 }
+
+aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 /* CONTENIDO DE LA PAGINA*/
 main {
     background-color: #11121E;
@@ -22,6 +25,7 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 .container-banner {
     width: 100%;
     height: auto;
@@ -40,7 +44,7 @@ main {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
-    justify-content:flex-end;
+    justify-content: flex-end;
 }
 
 .info-banner {
@@ -50,12 +54,14 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:0% 25%;
+    margin: 0% 25%;
 }
+
 .welcome-banner {
     height: 18%;
     font-family: 'Roboto', sans-serif;
     color: #FDF0D5;
+    font-size: 1.3em;
 }
 
 .nombre {
@@ -66,7 +72,7 @@ main {
     align-items: flex-start;
     font-family: 'Arimo', sans-serif;
     font-size: 3em;
-    color:#FDF0D5;
+    color: #FDF0D5;
     /* sombra */
     text-shadow: -4px 0px 0px #543976b9;
 }
@@ -74,6 +80,7 @@ main {
 .parrafo {
     margin-bottom: 0px;
 }
+
 .m {
     position: relative;
     margin-left: 34%;
@@ -87,10 +94,10 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: 2%;    
+    column-gap: 2%;
 }
 
-.forma{
+.forma {
     width: 30%;
     height: 95%;
     display: flex;
@@ -107,7 +114,7 @@ main {
 }
 
 .titulo {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 0;
 }
 
@@ -118,6 +125,7 @@ main {
 .welcome {
     font-family: 'Roboto', sans-serif;
     color: #FDF0D5;
+    font-size: 1.3em;
 }
 
 
@@ -128,7 +136,7 @@ main {
     height: 58vh;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     /* margin-top: 5%; */
 }
@@ -145,42 +153,48 @@ main {
 }
 
 .card-uno {
-    background-color:#ef9cdade;
+    background-color: #ef9cdade;
     width: 260px;
     height: 160px;
 }
-.card-uno>img{
+
+.card-uno>img {
     position: relative;
-    top:-20px;
+    top: -20px;
     left: 13px;
     height: 60%;
     width: 90%;
 }
-.vista-proyecto{
-    background-color:#11121ec4;
-    border:none;
-   display: block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+
+.vista-proyecto {
+    background-color: #11121ec4;
+    border: none;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     position: relative;
     left: 105px;
-    top:85px;
-    z-index:2;
+    top: 85px;
+    z-index: 2;
 }
-.card-uno:hover{
+
+.card-uno:hover {
     background-color: #8cc63e;
-    color:#FDF0D5;
+    color: #FDF0D5;
 }
-.vista-proyecto>a{
+
+.vista-proyecto>a {
     text-decoration: none;
-    color:#FDF0D5;
+    color: #FDF0D5;
 }
-.sazon:hover{
+
+.sazon:hover {
     border: solid 3px #b7e975bd;
     background-color: #b7e975bd;
     color: #FDF0D5;
 }
+
 .card-dos {
     background-color: #EF9CDA;
     width: 260px;
@@ -192,7 +206,8 @@ main {
     width: 260px;
     height: 160px;
 }
-.vacio:hover{
+
+.vacio:hover {
     border: solid 3px #d6b3bd;
     background-color: #d6b3bd;
     color: #FDF0D5;
@@ -200,16 +215,72 @@ main {
 
 /* RESPONSIVE */
 /* PC */
-@media (min-width:1200px){
-    
+@media (min-width:1200px) {
+    main {
+        width: 100%;
+    }
+
+    .elementos {
+        margin-top: 30px;
+    }
 }
 
 /* TABLETS */
 
 @media screen and (min-width:768px) and (max-width:1024px) {
+    main {
+        width: 100vw;
+    }
+    .container-banner{
+        width:85vw;
+        margin-left: 15%;
+    }
+    .cuadro{
+        width: 100%;
+        margin:0;
+        justify-content: center;
+    }
+    .info-banner{
+        width: 80%;
+       margin:7% 10% 10% -3%;
+       padding: 0%;
+        height: 80%;
+    }
+    .welcome-banner{
+        font-size: 3em;
+        margin-left: 10px;
+    }
+    .nombre{
+        height: 80%;
+        font-size: 4.5em;
+    }
+    .tips{
+        height: 25%;
+    }
+    .titulo{
+        font-size: 1.4em
+    }
+    .detalle{
+        font-size: 1.1em;
+    }
+    .welcome{
+        margin-top: 10px;
+        font-size: 1.7em;
+    }
+    .card-group{
+        height: 80%;
+        row-gap: 7px;
+    }
+
 }
 
 
 /* MOVIL */
-@media screen and (min-width:320px) and (max-width:720px){
+@media screen and (min-width:320px) and (max-width:720px) {
+    main {
+        width: 100%;
+    }
+    aside {
+        left: -80px;
+    }
 }
