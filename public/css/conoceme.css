@@ -82,7 +82,7 @@ main {
 }
 .carta-skills{
     background-color: #FDF0D5;
-    width: 25%;
+    width: 24%;
     height: 60%;
     display: flex;
     flex-direction: column;
@@ -90,29 +90,28 @@ main {
     align-items: center;
     color:#191a1b;
     font-family:'Roboto', sans-serif;
-    border-radius: 37px 25px 37px 25px;
+    border-radius:15px 10px 15px 10px;
    
 }
 
 .foto{
-    background-color:#543976;
+    background-color:#DDA77B;
     display: flex;
     flex-direction: row;
-    width: 90%;
-    height: 58%;
+    width: 92%;
+    height: 68%;
     border-radius: 15px 10px 15px 10px;
     position: relative;
-    bottom: 10%;
+    bottom: 8%;
 }
 .foto>img{
     display: flex;
-   
-    flex-direction: row;
+       flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    /* width: 80%;
-    height: 95%; */
-    /* border-radius: 15px 20px 15px 20px; */
+    justify-content: center;
+    width: 100%;
+    height: 100%; 
+    border-radius: 15px 10px 15px 10px;
 }
 .carta-texto{
     width: 100%;
@@ -125,7 +124,7 @@ main {
     
 }
 .titulo{
-    color:#84D2F6;
+    color:#125473 ;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: bold;
  }
@@ -151,6 +150,23 @@ main {
      padding-top: 2%;
 }
 
+.tip {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #84D2F6;
+    color: #452c63;
+    font-weight: bolder;
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
 /* RESPONSIVE */
 /* PC */
 @media (min-width:1200px){
@@ -159,11 +175,13 @@ main {
 
 /* TABLETS */
 
-@media screen and (min-width:768px) and (max-width:1024px) {
+@media screen and (min-width:768px) and (max-width:1199.98px) {
 }
 
 
 /* MOVIL */
-@media screen and (min-width:320px) and (max-width:720px){
+@media screen and (min-width:575.98px) and (max-width:767.98px){
 }
 
+@media screen and and (max-width:576px){
+}

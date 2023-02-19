@@ -7,7 +7,7 @@
 aside {
     width: 10%;
     height: 100%;
-    background-color: #0f5174;
+    background-color:#0f5174;
    display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,9 +21,10 @@ aside {
 .active {
     width: 90%;
     height: 1.5em;
-    background-color: #7dceec !important;
-   border-top: 2px solid #7dceec;
-    border-bottom: 2px solid #7dceec;
+    background-color: #A99F96 !important;
+   /* border-top: 2px solid #7dceec;
+    border-bottom: 2px solid #7dceec; */
+    border:none;
     color:#11121E !important;
     font-weight: bold;
     margin: 1% 0; 
@@ -62,7 +63,8 @@ ol,ul{
     height: 1em;
     text-decoration: none;
     background-color: #11121ece;
-    border: 1px solid #11121ece;
+    border:none;
+    /* border: 1px solid #11121ece; */
     margin: 1% 0; 
     text-decoration: none;
     

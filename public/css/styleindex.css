@@ -17,6 +17,7 @@ aside {
 
 /* CONTENIDO DE LA PAGINA*/
 main {
+
     background-color: #11121E;
     width: 100vw;
     height: auto;
@@ -38,13 +39,14 @@ main {
 
 .cuadro {
     width: 100%;
-    height: 42vh;
+    height: 40vh;
     background-image: url(../multimedia/images/LOGO_PORTAFOLIO_1.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+
 }
 
 .info-banner {
@@ -54,7 +56,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0% 25%;
+    margin: 0% 25%; 
 }
 
 .welcome-banner {
@@ -94,8 +96,9 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: 2%;
-}
+   column-gap: 2%;
+ }
+ 
 
 .forma {
     width: 30%;
@@ -104,14 +107,16 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #EF9CDA;
-    color: #543976;
+    background-color: #db5fb2;
+    color: #FDF0D5;
     border-radius: 37px 30px 37px 30px;
-    border: outset #EF9CDA;
+    border: outset #c566a5;
     -webkit-border-radius: 37px 37px 37px 37px;
     -moz-border-radius: 37px 37px 37px 37px;
     text-align: center;
 }
+
+
 
 .titulo {
     font-family: 'Roboto', sans-serif;
@@ -133,7 +138,7 @@ main {
 /* mis trabajos */
 .news {
     width: 100%;
-    height: 58vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,40 +154,77 @@ main {
     justify-content: center;
     align-items: center;
     column-gap: 5%;
-    /* margin-top: 1%; */
 }
 
-.card-uno {
-    background-color: #ef9cdade;
+.flip-container {
+    background-color: transparent;
     width: 260px;
     height: 160px;
+    /* border: 1px solid #ccc; */
+    /* perspective: 1000px;  */
 }
 
-.card-uno>img {
+.card {
+    background-color: #A99F96;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.flip-container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.front-uno:hover{
+    background-color: #8cc63e;
+    border-color: #8cc63e ;
+}
+
+.back {
+    background-color: #A99F96;
+    color: #11121E;
+    transform: rotateY(180deg);
+}
+
+
+/* .card-uno>img {
     position: relative;
     top: -20px;
     left: 13px;
     height: 60%;
     width: 90%;
-}
+} */
 
 .vista-proyecto {
-    background-color: #11121ec4;
+    background-color: #11121e75;
     border: none;
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    position: relative;
-    left: 105px;
-    top: 85px;
+    position: absolute;
+    right: 100px;
+    top: 50px;
     z-index: 2;
 }
 
-.card-uno:hover {
-    background-color: #8cc63e;
-    color: #FDF0D5;
-}
+
 
 .vista-proyecto>a {
     text-decoration: none;
@@ -190,22 +232,12 @@ main {
 }
 
 .sazon:hover {
-    border: solid 3px #b7e975bd;
-    background-color: #b7e975bd;
+    border: solid 3px #8cc63e;
+    background-color: #8cc63e;
     color: #FDF0D5;
 }
 
-.card-dos {
-    background-color: #EF9CDA;
-    width: 260px;
-    height: 160px;
-}
 
-.card-tres {
-    background-color: #EF9CDA;
-    width: 260px;
-    height: 160px;
-}
 
 .vacio:hover {
     border: solid 3px #d6b3bd;
@@ -227,47 +259,57 @@ main {
 
 /* TABLETS */
 
-@media screen and (min-width:768px) and (max-width:1024px) {
+@media screen and (min-width:768px) and (max-width:1199.98px) {
     main {
         width: 100vw;
     }
-    .container-banner{
-        width:85vw;
+
+    .container-banner {
+        width: 85vw;
         margin-left: 15%;
     }
-    .cuadro{
+
+    .cuadro {
         width: 100%;
-        margin:0;
+        margin: 0;
         justify-content: center;
     }
-    .info-banner{
+
+    .info-banner {
         width: 80%;
-       margin:7% 10% 10% -3%;
-       padding: 0%;
+        margin: 7% 10% 10% -3%;
+        padding: 0%;
         height: 80%;
     }
-    .welcome-banner{
+
+    .welcome-banner {
         font-size: 3em;
         margin-left: 10px;
     }
-    .nombre{
+
+    .nombre {
         height: 80%;
         font-size: 4.5em;
     }
-    .tips{
+
+    .tips {
         height: 25%;
     }
-    .titulo{
+
+    .titulo {
         font-size: 1.4em
     }
-    .detalle{
+
+    .detalle {
         font-size: 1.1em;
     }
-    .welcome{
+
+    .welcome {
         margin-top: 10px;
         font-size: 1.7em;
     }
-    .card-group{
+
+    .card-group {
         height: 80%;
         row-gap: 7px;
     }
@@ -276,11 +318,15 @@ main {
 
 
 /* MOVIL */
-@media screen and (min-width:320px) and (max-width:720px) {
+@media screen and (min-width:576px) and (max-width:767.98px) {
     main {
         width: 100%;
     }
+
     aside {
         left: -80px;
     }
 }
+
+/* MINIMAS */
+@media screen and (max-width:575.98px) {}
