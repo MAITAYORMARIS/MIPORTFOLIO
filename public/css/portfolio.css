@@ -130,20 +130,21 @@ main {
 }
 
 /* RESPONSIVE */
-/* PC */
-@media (min-width:1200px){
+/* PC GRANDE*/
+@media screen  and (min-width:1360){
+    
+}
+/* TABLET */
+@media screen and (min-width:768px) and (max-width:1024){}
+
+/* MOVIL GRANDE*/
+
+@media screen and (min-width:576px) and (max-width:767.98px){}
+
+/* MOVIL CHICO HORIZONTAL */
+@media screen and (min-width:321px) and (max-width:575.98px){
     
 }
 
-/* TABLETS */
-
-@media screen and (min-width:768px) and (max-width:1199.98px) {
-}
-
-
-/* MOVIL */
-@media screen and (min-width:575.98px) and (max-width:767.98px){
-}
-
-@media screen and and (max-width:576px){
-}
+/* MOVIL CHICO VERTICAL*/
+@media screen and (max-width:320px){}

@@ -6,7 +6,7 @@
 
 body {
     width: 100%;
-    min-height: 100vh;
+   height: 100%;
 }
 
 aside {
@@ -56,7 +56,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0% 25%; 
+    margin: 0% 25%;
 }
 
 .welcome-banner {
@@ -64,6 +64,12 @@ main {
     font-family: 'Roboto', sans-serif;
     color: #FDF0D5;
     font-size: 1.3em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .nombre {
@@ -83,6 +89,10 @@ main {
     margin-bottom: 0px;
 }
 
+.fw-bolder {
+    margin: 0;
+}
+
 .m {
     position: relative;
     margin-left: 34%;
@@ -96,9 +106,9 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-   column-gap: 2%;
- }
- 
+    column-gap: 2%;
+}
+
 
 .forma {
     width: 30%;
@@ -127,11 +137,7 @@ main {
     font-family: 'Barlow Condensed', sans-serif;
 }
 
-.welcome {
-    font-family: 'Roboto', sans-serif;
-    color: #FDF0D5;
-    font-size: 1.3em;
-}
+
 
 
 
@@ -143,17 +149,32 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
     /* margin-top: 5%; */
+}
+
+.welcome {
+    width: 100%;
+    height: 5%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #FDF0D5;
+    font-size: 1.3em;
 }
 
 .card-group {
     width: 96%;
-    height: 98%;
+    height: 95%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     column-gap: 5%;
+    margin: 0;
 }
 
 .flip-container {
@@ -191,9 +212,9 @@ main {
     text-align: center;
 }
 
-.front-uno:hover{
+.front-uno:hover {
     background-color: #8cc63e;
-    border-color: #8cc63e ;
+    border-color: #8cc63e;
 }
 
 .back {
@@ -246,98 +267,348 @@ main {
 }
 
 /* RESPONSIVE */
-/* PC */
-@media (min-width:1400px) {
+/* PC GRANDE*/
+@media screen and (min-width:1360px) {}
+
+/* TABLET */
+@media screen and (min-width:768px) and (max-width:1024) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
     main {
         width: 100%;
+        height: 100%;
     }
-
-    .elementos {
-        margin-top: 30px;
-    }
-}
-
-/* TABLETS */
-
-@media screen and (min-width:992px) and (max-width:1200px) {
-   body{
-    width: 100%;
-    height: 100%;
-   }
-    main {
-        width: 100vw;
-        height: auto;
+    aside {
+        position: fixed;
+        top: 0;
+        left: 0;
     }
 
     .container-banner {
-        width: 85vw;
-        margin-left: 15%;
+        width: 100%;
+        height: 100%;
+      margin-left: 20%;
+    }
+}
+
+/* MOVIL GRANDE*/
+
+@media screen and (min-width:576px) and (max-width:767.98px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+    }
+
+  
+    aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .container-banner {
+        width: 100%;
+        height: 100%;
+      margin-left: 19%;
     }
 
     .cuadro {
+        height: 42%;
         width: 100%;
-        margin: 0;
-        justify-content: center;
     }
 
     .info-banner {
-        width: 80%;
-        margin: 7% 10% 10% -3%;
-        padding: 0%;
-        height: 80%;
+        height: 100%;
+        width: 100%;
     }
 
     .welcome-banner {
-        font-size: 3em;
-        margin-left: 10px;
+        font-size: 1.1em;
+        padding-top: 10px;
     }
 
     .nombre {
-        height: 80%;
-        font-size: 4.5em;
+        font-size: 2.6em;
+        height: 40%;
     }
 
     .tips {
-        height: 25%;
+        width: 90%;
+        height: 20%;
+    }
+
+    .forma {
+        width: 48%;
+        height: 50%;
     }
 
     .titulo {
-        font-size: 1.4em
+        font-size: .8em;
     }
 
     .detalle {
-        font-size: 1.1em;
+        font-size: .7em;
+    }
+
+    .news {
+        width: 100%;
+        height: 58%;
     }
 
     .welcome {
-        margin-top: 10px;
-        font-size: 1.7em;
+        width: 78%;
+        height: 10%;
+        font-size: 1.1em;
     }
 
     .card-group {
-        height: 80%;
-        row-gap: 7px;
+        width: 78%;
+        height: 90%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        row-gap: 10px;
+        column-gap: 10px;
+        margin-top: 5px;
+    }
+
+    .flip-container {
+        width: 240px;
+        height: 160px;
+    }
+
+    .front,
+    .back {
+        font-size: 1rem;
+    }
+
+    .vista-proyecto {
+        width: 50px;
+        height: 50px;
+        right: 95px;
+        top: 55px;
+    }
+    .parrafo{
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
 }
 
-
-/* MOVIL */
-@media screen and (min-width:576px) and (max-width:991.98px) {
+/* MOVIL CHICO HORIZONTAL */
+@media screen and (min-width:321px) and (max-width:575.98px) {
     body{
         width: 100%;
         height: 100%;
-       }
+    }
     main {
-        width: 100vw;
+        width: 100%;
         height: auto;
     }
 
     aside {
-        left: -15%;
-        width:20%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .container-banner {
+        width: 100%;
+        height: auto;
+        margin: 0%;
+    }
+
+    .cuadro {
+        height: 40%;
+        width: 100%;
+    }
+
+    .info-banner {
+        height: 100%;
+        width: 100%;
+        margin: 0% 0% 0% 22%;
+    }
+
+    .welcome-banner {
+        font-size: 1em;
+        padding-top: 10px;
+    }
+
+    .nombre {
+        font-size: 2.3em;
+        height: 40%;
+    }
+
+    .tips {
+        width: 80%;
+        height: 22%;
+    }
+
+    .forma {
+        width: 48%;
+        height: 60%;
+    }
+
+    .titulo {
+        font-size: .8em;
+    }
+
+    .detalle {
+        font-size: .6em;
+    }
+
+    .news {
+        width: 100%;
+        height: 60%;
+    }
+
+    .welcome {
+        width: 78%;
+        height: 10%;
+        margin: 0% 0% 0% 22%;
+        font-size: 1em;
+    }
+
+    .card-group {
+        width: 78%;
+        height: 90%;
+        margin: 0% 0% 0% 22%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+        padding-bottom: 10px;
+        padding-top: 15px;
+    }
+
+    .flip-container {
+        width: 200px;
+        height: 150px;
+    }
+
+    .front,
+    .back {
+        font-size: 0.9rem;
+    }
+
+    .vista-proyecto {
+        width: 40px;
+        height: 40px;
+        right: 80px;
+        top: 55px;
     }
 }
 
-/* MINIMAS */
-@media screen and (max-width:575.98px) {}
+
+/* MOVIL CHICO VERTICAL*/
+@media screen and (max-width:320px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+    }
+
+    aside {
+        position: fixed;
+        top: 0;
+        left: -13%;
+    }
+
+    .container-banner {
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+    }
+
+    .cuadro {
+        height: 50%;
+        width: 100%;
+
+    }
+
+    .info-banner {
+        height: 100%;
+        width: 100%;
+        margin: 0% 0% 0% 18%;
+    }
+
+    .welcome-banner {
+        font-size: 1em;
+        padding-top: 10px;
+    }
+
+    .nombre {
+        font-size: 2em;
+    }
+
+    .tips {
+        width: 100%;
+    }
+
+    .forma {
+        width: 48%;
+        height: 100%;
+    }
+
+    .titulo {
+        font-size: .9em;
+    }
+
+    .detalle {
+        font-size: .7em;
+    }
+
+    .news {
+        width: 100%;
+        height: 50%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .welcome {
+        width: 82%;
+        height: auto;
+        margin: 0% 0% 0% 18%;
+        font-size: 1em;
+    }
+
+    .card-group {
+        width: 82%;
+        height: 90%;
+        margin: 0% 0% 0% 18%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .flip-container {
+        width: 200px;
+        height: 120px;
+    }
+
+    .front,
+    .back {
+        font-size: 0.9rem;
+    }
+
+    .vista-proyecto {
+        width: 40px;
+        height: 40px;
+        right: 80px;
+        top: 40px;
+    }
+}
