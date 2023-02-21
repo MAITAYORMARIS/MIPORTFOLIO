@@ -4,23 +4,22 @@
     box-sizing: border-box;
 }
 
-body {
+html,body {
     width: 100%;
-   height: 100%;
+    height: 100%;
 }
 
 aside {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
 }
 
 /* CONTENIDO DE LA PAGINA*/
 main {
-
     background-color: #11121E;
     width: 100vw;
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -29,7 +28,7 @@ main {
 
 .container-banner {
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-left: 10vw;
     display: flex;
     flex-direction: column;
@@ -39,14 +38,16 @@ main {
 
 .cuadro {
     width: 100%;
-    height: 40vh;
+    height: 42%;
     background-image: url(../multimedia/images/LOGO_PORTAFOLIO_1.png);
     background-size: cover;
+    -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-
+    justify-content: center;
 }
 
 .info-banner {
@@ -63,7 +64,7 @@ main {
     height: 18%;
     font-family: 'Roboto', sans-serif;
     color: #FDF0D5;
-    font-size: 1.3em;
+    font-size: 1.5em;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -79,7 +80,7 @@ main {
     justify-content: center;
     align-items: flex-start;
     font-family: 'Arimo', sans-serif;
-    font-size: 3em;
+    font-size: 3.5em;
     color: #FDF0D5;
     /* sombra */
     text-shadow: -4px 0px 0px #543976b9;
@@ -144,7 +145,7 @@ main {
 /* mis trabajos */
 .news {
     width: 100%;
-    height: 60vh;
+    height: 58%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,7 +164,7 @@ main {
     align-items: center;
     font-family: 'Roboto', sans-serif;
     color: #FDF0D5;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .card-group {
@@ -268,50 +269,106 @@ main {
 
 /* RESPONSIVE */
 /* PC GRANDE*/
-@media screen and (min-width:1360px) {}
+@media screen and (min-width:1361px) {
+main{
+    width: 100%;
+}
+
+.info-banner{
+    width: 100%;
+    margin:0% 10%;
+}
+.welcome-banner {
+    padding-top: 10px;
+    font-size: 1.5em;
+}
+.nombre{
+    font-size: 3.6em ;
+}
+.titulo{
+    font-size: 1.5em;
+}
+.card-group{
+    column-gap: 4%;
+    height: 90%;
+}
+.flip-container {
+    width: 300px;
+    height: 220px;
+}
+.welcome{
+    height: 10%;
+    font-size: 2em;
+}
+.front,
+.back {
+    font-size: 1.6rem;
+}
+
+.vista-proyecto {
+    width: 70px;
+    height: 70px;
+    right: 115px;
+    top: 75px;
+}
+.parrafo{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+}
 
 /* TABLET */
-@media screen and (min-width:768px) and (max-width:1024) {
-    body {
-        width: 100%;
-        height: 100%;
-    }
-
+@media screen and (min-width:768px) and (max-width:1024px) {
+    
     main {
         width: 100%;
-        height: 100%;
     }
-    aside {
-        position: fixed;
-        top: 0;
-        left: 0;
+    .container-banner {
+        width: 85%;
+        height: 100%;
+      margin-left: 14%;
     }
 
-    .container-banner {
+    .cuadro {
+        height: 45%;
         width: 100%;
+    }
+    .info-banner{
+        width: 100%;
+        margin:0% 10%;
+    }
+    .welcome-banner {
+        padding-top: 10px;
+    }
+
+    .forma {
+        width: 48%;
         height: 100%;
-      margin-left: 20%;
+    }
+   
+.titulo{
+    font-size: 1em;
+}
+
+    .news {
+        width: 100%;
+        height: 55%;
+    }
+    .card-group {
+        width: 100%;
+        height: 90%;
+        padding-top: 10px;
+        padding-bottom: 15px;
+       column-gap: 3%;  
+       padding-left: 10px;   
     }
 }
 
 /* MOVIL GRANDE*/
 
 @media screen and (min-width:576px) and (max-width:767.98px) {
-    body {
-        width: 100%;
-        height: 100%;
-    }
-
     main {
         width: 100%;
-        height: 100%;
-    }
-
-  
-    aside {
-        position: fixed;
-        top: 0;
-        left: 0;
     }
 
     .container-banner {
@@ -404,24 +461,15 @@ main {
 
 /* MOVIL CHICO HORIZONTAL */
 @media screen and (min-width:321px) and (max-width:575.98px) {
-    body{
-        width: 100%;
-        height: 100%;
-    }
+  
     main {
         width: 100%;
-        height: auto;
-    }
-
-    aside {
-        position: fixed;
-        top: 0;
-        left: 0;
+        height:100%;
     }
 
     .container-banner {
         width: 100%;
-        height: auto;
+        height: 100%;
         margin: 0%;
     }
 
@@ -510,10 +558,6 @@ main {
 
 /* MOVIL CHICO VERTICAL*/
 @media screen and (max-width:320px) {
-    body {
-        width: 100%;
-        height: 100%;
-    }
 
     main {
         width: 100%;
@@ -521,8 +565,6 @@ main {
     }
 
     aside {
-        position: fixed;
-        top: 0;
         left: -13%;
     }
 
