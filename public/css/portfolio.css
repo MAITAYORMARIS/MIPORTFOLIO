@@ -24,8 +24,7 @@ aside {
 main {
     background-color: #11121E;
     color: #F1E5E3;
-    width: 100vw;
-    ;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -97,72 +96,222 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 4%;
-
 }
 
 .carta{
+    background-color: #A99F96;
     width: 30%;
     height: 35%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #11121E;
+}
+.btn {
+    background-color: #11121e75;
+    border: none;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    top:40%;
+    left: 40%;
+    z-index: 2;
+}
+.btn:hover{
+    background-color: #db5fb2;
+}
+.btn>a{
+    text-decoration: none;
+    color: #11121e !important;
 }
 .card-sazon {
-    background-image: url(../multimedia/images/proyecto_sazon/logo-sazon.png);
-    background-size: cover;
+    background-image: url(../multimedia/images/proyecto_sazon/LOGOTRES.png);
+    background-size: contain;
     background-repeat: no-repeat;
-    
-}
+    flex-direction: column;
+    justify-content: center;
+    }
 
 .card-dos {
     background-color: #A99F96;
     /* background-size: contain;
     background-repeat: no-repeat; */
-   
 }
 
 .card-tres {
     background-color: #A99F96;
     /* background-size: contain;
     background-repeat: no-repeat; */
-    /* width: 30%;
-    height: 35%; */
 }
 
 .card-cuatro {
     background-color: #A99F96;
     /* background-size: contain;
     background-repeat: no-repeat; */
-    /* width: 30%;
-    height: 35%; */
 }
 
 .card-cinco {
     background-color: #A99F96;
     /* background-size: contain;
     background-repeat: no-repeat; */
-    /* width: 30%;
-    height: 35%; */
 }
 
 .card-seis {
     background-color: #A99F96;
     /* background-size: contain;
     background-repeat: no-repeat; */
-    /* width: 30%;
-    height: 35%; */
 }
 
 /* RESPONSIVE */
 /* PC GRANDE*/
-@media screen and (min-width:1360) {}
+@media screen and (min-width:1370px) {}
 
 /* TABLET */
-@media screen and (min-width:768px) and (max-width:1024) {}
+@media screen and (min-width:768px) and (max-width:1025px) {
+   
+    main {
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+    } 
+    .container {
+        width: 85%;
+        height:100%;
+    margin-left: 15%;
+    margin-right: 0%;
+    padding: 0%;
+    }
+    .news{
+        width: 85%;
+    }
+    .elementos{
+        align-items: center;
+    }
+    .card-group{
+        width: 90%;
+    }
+}
 
 /* MOVIL GRANDE*/
 
-@media screen and (min-width:576px) and (max-width:767.98px) {}
+@media screen and (min-width:576px) and (max-width:767.98px) {
+    main {
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 100%;
+        height:100%;
+    margin-left: 22%;
+    margin-right: 0;
+    }
+    .news {
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+        margin-left: 0;
+        justify-content: flex-start;
+    }
+
+    .welcome {
+        font-size: 1em;
+       margin-left: 0;
+    }
+
+    .elementos {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        margin-right: 3%;
+        row-gap: 1%;
+        font-size: 0.9em;
+        margin-top: 5px;
+    }
+
+    .card-group {
+        width: 100%;
+        height: 900px;
+        margin: 50px 0px 10px 10px;
+        row-gap: 8px;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+    }
+    .carta{
+        width:220px;
+        height: 250px;
+    }
+    .btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        top:40%;
+        left: 40%;
+    }
+}
 
 /* MOVIL CHICO HORIZONTAL */
-@media screen and (min-width:321px) and (max-width:575.98px) {}
+@media screen and (min-width:321px) and (max-width:575.98px) {
+    main {
+        width: 100%;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        margin-left: 22%;
+        margin-bottom: 15px;
+    }
+
+    .news {
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+        margin-left: 0;
+        justify-content: flex-start;
+    }
+
+    .welcome {
+        font-size: 1em;
+       margin-left: 0;
+    }
+
+    .elementos {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        margin-right: 3%;
+        row-gap: 1%;
+        font-size: 0.6em;
+        margin-top: 5px;
+    }
+
+    .card-group {
+        width: 100%;
+        height: 900px;
+        margin: 50px 10px 10px 15px;
+        row-gap: 8px;
+        justify-content: center;
+        column-gap: 10px;
+    }
+    .carta{
+        width:180px;
+        height: 120px;
+    }
+    .btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        top:40%;
+        left: 40%;
+    }
+}
 
 /* MOVIL CHICO VERTICAL*/
 @media screen and (max-width:320px) {
@@ -209,13 +358,19 @@ main {
         width: 100%;
         height: 200px;
         margin: 30% 0% 15% 0%;
-        /* column-gap: 5px; */
         row-gap: 8px;
         justify-content: space-between;
     }
     .carta{
         width:110px;
         height: 80px;
+    }
+    .btn {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        top:40%;
+        left: 40%;
     }
 
 }
